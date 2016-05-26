@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Daytree Designs</title>
+	<meta name="author" content="Melvin Daytree" />
+	<meta name="description" content="fullPage.js using CSS3 transformations." />
+	<meta name="keywords"  content="fullpage,jquery,anchor,links,inside,demo,css,css3" />
+	<meta name="Resource-type" content="Document" />
+
+
+	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+	<link rel="stylesheet" type="text/css" href="css/main.css" />
+
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+	<script type="text/javascript" src="js/jquery.fullPage.js"></script>
+	<script type="text/javascript" src="examples.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE'],
+       			css3: true
+       		});
+		});
+	</script>
+
+</head>
+<body>
+
+
+
+
+<div id="fullpage">
+	<div class="section home" id="section0">
+		<h1>Daytree Designs</h1>
+		<p>Lets Create Together</p>
+		<img src="http://webdesign.digitalmediauconn.org/spring16/med13031/portfolio/img/daytreelogoidea500.png" alt="Daytree Logo Loops" height="400px" width="400px" class="pic-margin logo-s"/>
+	</div>
+	<div class="section" id="section1">
+		<div class="slide intro">
+			<h1>About Me</h1>
+			<img src="http://webdesign.digitalmediauconn.org/fall15/med13031port/portfolio/img/headshot.jpg" class="headshot">
+			<p class="right-margin margin-auto">
+	      Hello there! I'm a very driven college student at the University of Connecticut, Storrs campus. Assertive self starter and creative individual. My key strengths include the ability and motivation to raise something from the start and finish it as well as being a very fast learner in new environments and objectives.
+
+			</p>
+		<div class="slide">
+			<div class=""> <h1>My Work</h1>
+			</div>
+		</div>
+		<div class="slide"> <h1>Skills</h1></div>
+		</div>
+	</div>
+	<div class="section" id="section2">
+		<div class="work">
+			<h1>No CSS3? No problem!</h1>
+			<p>If CSS3 is not available, animations will fall back to jQuery animate.</p>
+		</div>
+	</div>
+		<div class="section" id="section3">
+			<h1>Contact Me</h1>
+			
+        <FORM METHOD="post" ACTION="contact.php" enctype="multipart/form-data" class="text-center">
+            <div id="form">
+                <form>
+	                <p class="zero">Requestor:</p>
+	                <input type="text" name="name" required class="input-box">
+	                <br />
+	                <p class="zero">E-mail:</p>
+	                <input type="text" name="email" required class="input-box">
+	                <br />
+	                <p class="zero">Comments:</p>
+	                <textarea type="text" name="comments" required class="comments"></textarea> <br />
+	                <input id="submit" type="submit" class="btn btn-color">
+              	</form>
+            </div>
+        </div>
+     
+        
+</div>
+		</div>
+	</div>
+	<footer>
+		<p>&copy Melvin Daytree</p>
+	</footer>
+</div>
+
+
+</body>
+</html>
