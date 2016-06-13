@@ -83,13 +83,13 @@ div {
   width: 100%; }
 
 h1 {
-  font-size: 100px;
+  font-size: 80px;
   margin-top: 0px;
   margin-bottom: 0px;
   font-family: 'Roboto', sans-serif; }
 
 p {
-  font-size: 40px;
+  font-size: 30px;
   font-family: 'Roboto', sans-serif; }
 
 #fullpage {
@@ -131,7 +131,7 @@ https://jsfiddle.net/7L27oz5d/1/
   transition: all .3s;
 }
 */
-/* Home Page */
+/* About Me */
 .home {
   background-color: #ECF2C7; }
 
@@ -163,14 +163,75 @@ https://jsfiddle.net/7L27oz5d/1/
     margin-left: 10%; }
 
   .right-margin {
-    margin-right: 10%; } }
+    margin-right: 5%;
+    text-align: left;
+    margin-left: 41%; }
+
+  p {
+    font-size: 40px; }
+
+  h1 {
+    font-size: 100px; }
+
+  .logo-s {
+    width: 500px;
+    height: 500px; } }
+/* Contact Page*/
+#section3 p {
+  margin-bottom: 5px; }
+
+.input-box {
+  height: 20px;
+  width: 350px;
+  border-radius: 5px;
+  border: 2px solid #CAC6C6; }
+
+.comments {
+  height: 200px;
+  width: 350px;
+  border-radius: 5px;
+  border: 2px solid #CAC6C6; }
+
+.btn {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  margin-top: 5px; }
+
+.btn-color {
+  background-color: #ED3434;
+  color: #D4C2C2; }
+
+.btn-color:hover {
+  background-color: #ED3434;
+  color: white; }
+
+/* Footer */
 footer {
   display: block;
   position: fixed;
   bottom: 0px;
   right: 0px;
   color: gray;
-  z-index: 20; }
+  z-index: 20;
+  margin-right: 3px;
+  text-decoration: none; }
   footer p {
     font-size: 10px; }
 

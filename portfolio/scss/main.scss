@@ -98,6 +98,10 @@ textarea {
 
 $width: 100%;
 $height: 100%;
+$h2size: 80px;
+$firstBackgroundColor: rgb(27, 188, 155);
+$h5size: 60px;
+$aboutMeColor: #ECF2C7;
 
 div {
     height: $height;
@@ -119,6 +123,15 @@ p {
 #fullpage {
     transition: all 1000ms ease;
     text-align:center;
+}
+
+.pic-text-width {
+    width:1120px;
+}
+
+.shape-outside {
+    shape-outside: circle(50%);
+    margin-right:82px;
 }
 
 /* Tree Css
@@ -160,12 +173,83 @@ https://jsfiddle.net/7L27oz5d/1/
 /* About Me */
 
 .home {
-    background-color: #ECF2C7;
+    background-color: $aboutMeColor;
 }
 
 .intro {
-    background-color: #C7F2E3;
+    background-color: $aboutMeColor;
 }
+
+#section1 {
+    h1 {
+        margin-top:-100px;
+        margin-bottom:20px;
+    }
+}
+/*My work page*/
+#mywork {
+    
+    h2 {
+        font-size:$h2size;
+    }
+    
+    div {
+        width: 350px;
+    height: 250px;
+    background-color: blue;
+    float: left;
+    margin-left: 10%;
+    margin-top: 60px;
+    position:relative;
+    border:2px white solid;
+    
+    
+    .projecthover { 
+    background-color:#de9a44;
+    opacity:.8;
+    width:100%; 
+    height:180px; 
+    display:none; 
+    position:absolute;
+    left: 0;
+    bottom: 0;
+    margin-left:0px;
+    border:0px;
+    
+    }
+    
+    }
+    
+    p {
+        font-size:14px;
+    }
+
+    .project1 {
+      background-image: url(http://media.paes.uconn.edu/port/portfolio/img/hangman.jpg);
+    }
+
+    .project2 {
+      background-image: url(http://media.paes.uconn.edu/port/portfolio/img/seo.jpg);
+    }
+
+    .project3 {
+      background-image: url(http://media.paes.uconn.edu/port/portfolio/img/csszengarden.jpg);
+    }
+
+    .project4 {
+      background-image: url(http://media.paes.uconn.edu/port/portfolio/img/csszengarden.jpg);
+    }
+
+    .project5 {
+      background-image: url(http://media.paes.uconn.edu/port/portfolio/img/wallvideo.jpg);
+    }
+
+    .project6 {
+      background-image: url(http://media.paes.uconn.edu/port/portfolio/img/dakota.jpg);
+    }
+}
+
+
 
 .headshot {
     border-radius: 40px;
@@ -188,19 +272,107 @@ https://jsfiddle.net/7L27oz5d/1/
     background-color: #CDC7F2;
 }
 
+/*Modals*/
+.modal-width {
+    width:800px;
+    height:600px;
+}
+
+.modal-title {
+    text-align:center;
+    font-size: $h5size;
+    margin-bottom:50px;
+    margin-top:10px;
+}
+
+.modal-text {
+    float:left;
+    width:300px;
+    margin-left: 60px;
+}
+
+.modal-pic {
+    width:400px;
+    height:300px;
+    float:left;
+    border: 2px solid black;
+}
+
+.modal-button {
+    margin-top:40px;
+    text-align:center;
+    width:100px;
+    margin-left:45%;
+    background-color:white;
+    border: 1px $firstBackgroundColor solid;
+    transition: all .5s linear;
+    cursor:pointer;
+    background-color:$aboutMeColor;
+}
+
+.modal-button:hover {
+    border: 1px black solid;
+    background-color: $firstBackgroundColor;
+}
+
+.modal-link {
+  transition: all .5s linear;
+}
+
+.modal-link:hover {
+  color:white;
+}
+/*Skills Page*/
+
+.skills {
+    margin-left:auto;
+    margin-right:auto;
+    
+    h2 {
+        font-size:$h2size;
+        margin-top:15%;
+    }
+    
+    h4 {
+        font-size: 50px;
+    }
+    
+}
+
+.center-box{
+  width:660px;
+  margin:0 auto;
+}
+
+.language {
+    width:300px;
+    height:300px;
+    background-color:orange;
+    float:left;
+    
+}
+
+.program {
+    width:300px;
+    height:300px;
+    background-color:orange;
+    float:left;
+    margin-left:60px;
+}
 
 @media screen and (min-width:925px) {
     .headshot {
     width: 400px;
     Height: 400px;
     float:left;
-    margin-left:10%;
+    margin-left:15%;
+    margin-right:6%;
     }
 
     .right-margin {
     margin-right: 5%;
     text-align: left;
-    margin-left: 41%;
+    margin-left: 18%;
     }
 
     p {
@@ -267,6 +439,7 @@ https://jsfiddle.net/7L27oz5d/1/
 .btn-color {
     background-color: #ED3434;
     color: #D4C2C2;
+    transition: all .5s linear;
     }
 
 .btn-color:hover {
@@ -280,6 +453,7 @@ footer {
 
     p {
     font-size: 10px;
+    text-decoration: none;
     }
 
     display:block;
@@ -289,22 +463,423 @@ footer {
     color: gray;
     z-index: 20;
     margin-right:3px;
+
+}
+
+.test-arrow {
+    border-right:15px solid white;
+    border-bottom:15px solid white;
+    width:30px;
+    height:30px;
+    transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:50px;
 }
 
 .arrow-down {
     width: 0; 
     height: 0; 
-    border-left: 20px solid transparent;
-    border-right: 20px solid transparent;
-    
-    border-top: 20px solid #f00;
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    border-top: 40px solid #FFF;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:50px;
 }
 
+.fp-controlArrow.fp-prev { 
+    border-right:15px solid white;
+    border-bottom:15px solid white;
+    width:30px;
+    height:30px;
+    transform: rotate(140deg);
+    -moz-transform: rotate(140deg);
+    -webkit-transform: rotate(140deg);
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:50px;
+}
 
+.fp-controlArrow.fp-prev { 
+    border-right:15px solid white;
+    border-bottom:15px solid white;
+    width:30px;
+    height:30px;
+    transform: rotate(140deg);
+    -moz-transform: rotate(140deg);
+    -webkit-transform: rotate(140deg);
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:50px;
+    border-width:0 20px 20px 0;
+    left:30px;
+}
 
+.fp-controlArrow.fp-next { 
+    border-left:15px solid white;
+    border-bottom:15px solid white;
+    width:30px;
+    height:30px;
+    transform: rotate(-140deg);
+    -moz-transform: rotate(-140deg);
+    -webkit-transform: rotate(-140deg);
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:50px;
+    border-width:0 0 20px 20px;
+    right:30px;
+}
 
+.fp-controlArrow.fp-next:hover {
+    border-left:20px solid $firstBackgroundColor;
+    border-bottom:20px solid $firstBackgroundColor;
+    transition: all .5s linear;
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    -o-animation-play-state: paused;
+    animation-play-state: paused;
+    transition-duration: 0.6s;
+}
 
+.fp-controlArrow.fp-prev:hover {
+    border-right:20px solid $firstBackgroundColor;
+    border-bottom:20px solid $firstBackgroundColor;
+    transition: all .5s linear;
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    -o-animation-play-state: paused;
+    animation-play-state: paused;
+    transition-duration: 0.6s;
+}
 
+/*Arrow Down Animation*/
+
+.element-animation{
+  animation: animationFrames linear 4s;
+  animation-iteration-count: infinite;
+  transform-origin: 50% 50%;
+  -webkit-animation: animationFrames linear 4s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-transform-origin: 50% 50%;
+  -moz-animation: animationFrames linear 4s;
+  -moz-animation-iteration-count: infinite;
+  -moz-transform-origin: 50% 50%;
+  -o-animation: animationFrames linear 4s;
+  -o-animation-iteration-count: infinite;
+  -o-transform-origin: 50% 50%;
+  -ms-animation: animationFrames linear 4s;
+  -ms-animation-iteration-count: infinite;
+  -ms-transform-origin: 50% 50%;
+}
+
+@keyframes animationFrames{
+  0% {
+    transform:  translate(0px,0px)  rotate(45deg) ;
+  }
+  25% {
+    transform:  translate(0px,50px)  rotate(45deg) ;
+  }
+  50% {
+    transform:  translate(0px,30px)  rotate(45deg) ;
+  }
+  73% {
+    transform:  translate(0px,50px)  rotate(45deg) ;
+  }
+  100% {
+    transform:  translate(0px,0px)  rotate(45deg) ;
+  }
+}
+
+@-moz-keyframes animationFrames{
+  0% {
+    -moz-transform:  translate(0px,0px)  rotate(45deg) ;
+  }
+  25% {
+    -moz-transform:  translate(0px,50px)  rotate(45deg) ;
+  }
+  50% {
+    -moz-transform:  translate(0px,30px)  rotate(45deg) ;
+  }
+  73% {
+    -moz-transform:  translate(0px,50px)  rotate(45deg) ;
+  }
+  100% {
+    -moz-transform:  translate(0px,0px)  rotate(45deg) ;
+  }
+}
+
+@-webkit-keyframes animationFrames {
+  0% {
+    -webkit-transform:  translate(0px,0px)  rotate(45deg) ;
+  }
+  25% {
+    -webkit-transform:  translate(0px,50px)  rotate(45deg) ;
+  }
+  50% {
+    -webkit-transform:  translate(0px,30px)  rotate(45deg) ;
+  }
+  73% {
+    -webkit-transform:  translate(0px,50px)  rotate(45deg) ;
+  }
+  100% {
+    -webkit-transform:  translate(0px,0px)  rotate(45deg) ;
+  }
+}
+
+@-o-keyframes animationFrames {
+  0% {
+    -o-transform:  translate(0px,0px)  rotate(45deg) ;
+  }
+  25% {
+    -o-transform:  translate(0px,50px)  rotate(45deg) ;
+  }
+  50% {
+    -o-transform:  translate(0px,30px)  rotate(45deg) ;
+  }
+  73% {
+    -o-transform:  translate(0px,50px)  rotate(45deg) ;
+  }
+  100% {
+    -o-transform:  translate(0px,0px)  rotate(45deg) ;
+  }
+}
+
+@-ms-keyframes animationFrames {
+  0% {
+    -ms-transform:  translate(0px,0px)  rotate(45deg) ;
+  }
+  25% {
+    -ms-transform:  translate(0px,50px)  rotate(45deg) ;
+  }
+  50% {
+    -ms-transform:  translate(0px,30px)  rotate(45deg) ;
+  }
+  73% {
+    -ms-transform:  translate(0px,50px)  rotate(45deg) ;
+  }
+  100% {
+    -ms-transform:  translate(0px,0px)  rotate(45deg) ;
+  }
+}
+//Animation for the right arrow
+.fp-controlArrow.fp-next{
+  animation: move-arrow-right linear 4s;
+  animation-iteration-count: infinite;
+  transform-origin: 50% 50%;
+  -webkit-animation: move-arrow-right linear 4s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-transform-origin: 50% 50%;
+  -moz-animation: move-arrow-right linear 4s;
+  -moz-animation-iteration-count: infinite;
+  -moz-transform-origin: 50% 50%;
+  -o-animation: move-arrow-right linear 4s;
+  -o-animation-iteration-count: infinite;
+  -o-transform-origin: 50% 50%;
+  -ms-animation: move-arrow-right linear 4s;
+  -ms-animation-iteration-count: infinite;
+  -ms-transform-origin: 50% 50%;
+}
+
+@keyframes move-arrow-right{
+  0% {
+    transform:  translate(0px,0px)  rotate(-140deg) ;
+  }
+  25% {
+    transform:  translate(20px,0px)  rotate(-140deg) ;
+  }
+  50% {
+    transform:  translate(10px,0px)  rotate(-140deg) ;
+  }
+  75% {
+    transform:  translate(30px,0px)  rotate(-140deg) ;
+  }
+  100% {
+    transform:  translate(0px,0px)  rotate(-140deg) ;
+  }
+}
+
+@-moz-keyframes move-arrow-right{
+  0% {
+    -moz-transform:  translate(0px,0px)  rotate(-140deg) ;
+  }
+  25% {
+    -moz-transform:  translate(20px,0px)  rotate(-140deg) ;
+  }
+  50% {
+    -moz-transform:  translate(10px,0px)  rotate(-140deg) ;
+  }
+  75% {
+    -moz-transform:  translate(30px,0px)  rotate(-140deg) ;
+  }
+  100% {
+    -moz-transform:  translate(0px,0px)  rotate(-140deg) ;
+  }
+}
+
+@-webkit-keyframes move-arrow-right {
+  0% {
+    -webkit-transform:  translate(0px,0px)  rotate(-140deg) ;
+  }
+  25% {
+    -webkit-transform:  translate(20px,0px)  rotate(-140deg) ;
+  }
+  50% {
+    -webkit-transform:  translate(10px,0px)  rotate(-140deg) ;
+  }
+  75% {
+    -webkit-transform:  translate(30px,0px)  rotate(-140deg) ;
+  }
+  100% {
+    -webkit-transform:  translate(0px,0px)  rotate(-140deg) ;
+  }
+}
+
+@-o-keyframes move-arrow-right {
+  0% {
+    -o-transform:  translate(0px,0px)  rotate(-140deg) ;
+  }
+  25% {
+    -o-transform:  translate(20px,0px)  rotate(-140deg) ;
+  }
+  50% {
+    -o-transform:  translate(10px,0px)  rotate(-140deg) ;
+  }
+  75% {
+    -o-transform:  translate(30px,0px)  rotate(-140deg) ;
+  }
+  100% {
+    -o-transform:  translate(0px,0px)  rotate(-140deg) ;
+  }
+}
+
+@-ms-keyframes move-arrow-right {
+  0% {
+    -ms-transform:  translate(0px,0px)  rotate(-140deg) ;
+  }
+  25% {
+    -ms-transform:  translate(20px,0px)  rotate(-140deg) ;
+  }
+  50% {
+    -ms-transform:  translate(10px,0px)  rotate(-140deg) ;
+  }
+  75% {
+    -ms-transform:  translate(30px,0px)  rotate(-140deg) ;
+  }
+  100% {
+    -ms-transform:  translate(0px,0px)  rotate(-140deg) ;
+  }
+}
+
+.fp-controlArrow.fp-prev{
+  animation: move-arrow-left linear 4s;
+  animation-iteration-count: infinite;
+  transform-origin: 50% 50%;
+  -webkit-animation: move-arrow-left linear 4s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-transform-origin: 50% 50%;
+  -moz-animation: move-arrow-left linear 4s;
+  -moz-animation-iteration-count: infinite;
+  -moz-transform-origin: 50% 50%;
+  -o-animation: move-arrow-left linear 4s;
+  -o-animation-iteration-count: infinite;
+  -o-transform-origin: 50% 50%;
+  -ms-animation: move-arrow-left linear 4s;
+  -ms-animation-iteration-count: infinite;
+  -ms-transform-origin: 50% 50%;
+}
+
+@keyframes move-arrow-left{
+  0% {
+    transform:  translate(0px,0px)  rotate(140deg) ;
+  }
+  25% {
+    transform:  translate(-20px,0px)  rotate(140deg) ;
+  }
+  50% {
+    transform:  translate(-10px,0px)  rotate(140deg) ;
+  }
+  75% {
+    transform:  translate(-30px,0px)  rotate(140deg) ;
+  }
+  100% {
+    transform:  translate(0px,0px)  rotate(140deg) ;
+  }
+}
+
+@-moz-keyframes move-arrow-left{
+  0% {
+    -moz-transform:  translate(0px,0px)  rotate(140deg) ;
+  }
+  25% {
+    -moz-transform:  translate(-20px,0px)  rotate(140deg) ;
+  }
+  50% {
+    -moz-transform:  translate(-10px,0px)  rotate(140deg) ;
+  }
+  75% {
+    -moz-transform:  translate(-30px,0px)  rotate(140deg) ;
+  }
+  100% {
+    -moz-transform:  translate(0px,0px)  rotate(140deg) ;
+  }
+}
+
+@-webkit-keyframes move-arrow-left {
+  0% {
+    -webkit-transform:  translate(0px,0px)  rotate(140deg) ;
+  }
+  25% {
+    -webkit-transform:  translate(-20px,0px)  rotate(140deg) ;
+  }
+  50% {
+    -webkit-transform:  translate(-10px,0px)  rotate(140deg) ;
+  }
+  75% {
+    -webkit-transform:  translate(-30px,0px)  rotate(140deg) ;
+  }
+  100% {
+    -webkit-transform:  translate(0px,0px)  rotate(140deg) ;
+  }
+}
+
+@-o-keyframes move-arrow-left {
+  0% {
+    -o-transform:  translate(0px,0px)  rotate(140deg) ;
+  }
+  25% {
+    -o-transform:  translate(-20px,0px)  rotate(140deg) ;
+  }
+  50% {
+    -o-transform:  translate(-10px,0px)  rotate(140deg) ;
+  }
+  75% {
+    -o-transform:  translate(-30px,0px)  rotate(140deg) ;
+  }
+  100% {
+    -o-transform:  translate(0px,0px)  rotate(140deg) ;
+  }
+}
+
+@-ms-keyframes move-arrow-left {
+  0% {
+    -ms-transform:  translate(0px,0px)  rotate(140deg) ;
+  }
+  25% {
+    -ms-transform:  translate(-20px,0px)  rotate(140deg) ;
+  }
+  50% {
+    -ms-transform:  translate(-10px,0px)  rotate(140deg) ;
+  }
+  75% {
+    -ms-transform:  translate(-30px,0px)  rotate(140deg) ;
+  }
+  100% {
+    -ms-transform:  translate(0px,0px)  rotate(140deg) ;
+  }
+}
 
 /* ==========================================================================
    Helper classes

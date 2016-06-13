@@ -44,20 +44,79 @@
 		<h1>Daytree Designs</h1>
 		<p>Lets Create Together</p>
 		<img src="http://webdesign.digitalmediauconn.org/spring16/med13031/portfolio/img/daytreelogoidea500.png" alt="Daytree Logo Loops" height="400px" width="400px" class="pic-margin logo-s"/>
+		<div class="test-arrow element-animation"></div>
 	</div>
 	<div class="section" id="section1">
 		<div class="slide intro">
 			<h1>About Me</h1>
-			<img src="http://webdesign.digitalmediauconn.org/fall15/med13031port/portfolio/img/headshot.jpg" class="headshot">
-			<p class="right-margin margin-auto">
+			<img src="http://webdesign.digitalmediauconn.org/fall15/med13031port/portfolio/img/headshot.jpg" class="headshot shape-outside">
+			<p class="right-margin margin-auto pic-text-width">
 	      Hello there! I'm a very driven college student at the University of Connecticut, Storrs campus. Assertive self starter and creative individual. My key strengths include the ability and motivation to raise something from the start and finish it as well as being a very fast learner in new environments and objectives.
 
 			</p>
 		<div class="slide">
-			<div class=""> <h1>My Work</h1>
+			<div id="mywork" class=""> <h2>My Work</h2>
+					<div class="project1">
+						<div class="projecthover">
+    					<h3>Title</h3>
+    					<p>Lorem ipsum dolor sit amet, consectetur </p>
+						<!-- Modal HTML embedded directly into document -->
+							<div id="ex1" style="display:none; width:800px" class="modal-width">
+								<h5 class="modal-title"><u>TITLE</u></h5>
+									<img src="http://webdesign.digitalmediauconn.org/fall15/med13031port/portfolio/img/hangman.jpg" alt="blue" style="width:400px; height:300px;" class="modal-pic">
+									<p class="modal-text">BLAH blah blah blah blah boo baa bad ddass dsdef eg liwh </p>
+									<a href="#" target="_blank"><button class="modal-button">Live Demo</button></a>
+							</div>
+							<!-- Link to open the modal -->
+							<p><a href="#ex1" rel="modal:open" class="modal-link">Open Modal</a></p>
+  						</div>
+					</div>
+					<div class="project2">
+						<div class="projecthover">
+    					<h3>Title</h3>
+    					<p>Lorem ipsum dolor sit amet, consectetur </p>
+  						</div>
+					</div>
+					<div class="project3">
+						<div class="projecthover">
+    					<h3>Title</h3>
+    					<p>Lorem ipsum dolor sit amet, consectetur </p>
+  						</div>
+					</div>
+					<div class="project4">
+						<div class="projecthover">
+    					<h3>Title</h3>
+    					<p>Lorem ipsum dolor sit amet, consectetur </p>
+  						</div>
+					</div>
+					<div class="project5">
+						<div class="projecthover">
+    					<h3>Title</h3>
+    					<p>Lorem ipsum dolor sit amet, consectetur </p>
+  						</div>
+					</div>
+					<div class="project6">
+						<div class="projecthover">
+    					<h3>Title</h3>
+    					<p>Lorem ipsum dolor sit amet, consectetur </p>
+  						</div>
+					</div>
 			</div>
 		</div>
-		<div class="slide"> <h1>Skills</h1></div>
+		<div class="slide skills"> 
+			
+			
+				<h2>Skills</h2>
+			<div class="center-box">
+				<div class="language">
+					<h4>Languages</h4>
+				</div>
+				<div class="program">
+					<h4>Programs</h4>
+				</div>
+			</div>
+			</div>
+		</div>
 		</div>
 	</div>
 	<div class="section" id="section2">
@@ -90,10 +149,14 @@
 		</div>
 	</div>
 	<footer>
-		<p>&copy Melvin Daytree</p>
+		<p><a href="https://github.com/melvindaytree/">&copy Melvin Daytree</a></p>
 	</footer>
 </div>
 
 
 </body>
+
+<script type="text/javascript" src="js/main.js"></script>
+<script src="jquery-modal-master/jquery.modal.min.js" type="text/javascript" charset="utf-8"></script>
+<link rel="stylesheet" href="jquery-modal-master/jquery.modal.css" type="text/css" media="screen" />
 </html>
