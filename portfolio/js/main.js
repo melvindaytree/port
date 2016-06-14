@@ -24,3 +24,30 @@ $(".project6").hover(function () {
 });
 
 
+$("#language").toggle( function () {
+        $("#language").addClass("expand");
+        $(".center-box").css("width", "1400px");
+        $("#language").removeClass("language");
+        $("#program").toggle();
+    },
+    
+    function () {
+        $("#language").removeClass("expand");
+        $(".center-box").css( "width", "660px" );
+        $("#language").addClass("language");
+        $("#program").delay( 3000 ).toggle();
+    });
+
+    $("#program").toggle( function () {
+        $("#program").addClass("expand");
+        $(".center-box").css("width", "1400px");
+        $("#program").removeClass("program");
+        $("#language").toggle();
+    },
+    
+    function () {
+        $("#program").removeClass("expand");
+        $(".center-box").css( "width", "660px" );
+        $("#program").addClass("program");
+        $("#language").delay( 3000 ).toggle();
+    });
