@@ -23,6 +23,17 @@ $(".project6").hover(function () {
     $(".project6").find(".projecthover").stop(true).slideToggle("slow");
 });
 
+$(".project7").hover(function () {
+    $(".project7").find(".projecthover").stop(true).slideToggle("slow");
+});
+
+$(".project8").hover(function () {
+    $(".project8").find(".projecthover").stop(true).slideToggle("slow");
+});
+
+$(".project9").hover(function () {
+    $(".project9").find(".projecthover").stop(true).slideToggle("slow");
+});
 
 $("#language").toggle( function () {
         $("#language").addClass("expand");
