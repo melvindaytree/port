@@ -99,8 +99,12 @@ p {
   transition: all 1000ms ease;
   text-align: center; }
 
+.together {
+  margin-bottom: 40px;
+  font-size: 30px; }
+
 .pic-text-width {
-  width: 1120px; }
+  width: 740px; }
 
 .shape-outside {
   shape-outside: circle(50%);
@@ -155,78 +159,61 @@ https://jsfiddle.net/7L27oz5d/1/
     margin-bottom: 20px; }
 
 /*My work page*/
-#mywork, #work {
-  background-color: #130960; }
-  #mywork h2, #work h2 {
+#mywork {
+  background-color: #130960;
+  /* div {
+       width: 300px;
+   height: 300px;
+   background-color: blue;
+   float: left;
+   position:relative;
+   border:2px white solid;
+   overflow:hidden;
+   }
+   */ }
+  #mywork h2 {
     font-size: 80px; }
-  #mywork div, #work div {
-    width: 300px;
-    height: 300px;
-    background-color: blue;
-    float: left;
-    position: relative;
-    border: 2px white solid;
-    overflow: hidden; }
-    #mywork div .projecthover, #work div .projecthover {
-      background-color: #de9a44;
-      opacity: .8;
-      width: 100%;
-      height: 180px;
-      display: none;
-      position: absolute;
-      left: 0;
-      bottom: 0;
-      margin-left: 0px;
-      border: 0px; }
-  #mywork .huge, #work .huge {
-    width: 29%;
-    height: 911px;
-    background-color: red;
-    float: right;
-    margin-top: -917px;
-    border-top: 7px solid white; }
-  #mywork p, #work p {
+  #mywork div .projecthover {
+    background-color: #de9a44;
+    opacity: .8;
+    width: 100%;
+    height: 100%;
+    display: none;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin-left: 0px;
+    border: 0px;
+    z-index: 20; }
+  #mywork p {
     font-size: 14px; }
-  #mywork .project1, #work .project1 {
+  #mywork .project1 {
     background-image: url(http://media.paes.uconn.edu/port/portfolio/img/hangman300.jpg); }
-  #mywork .project2, #work .project2 {
+  #mywork .project2 {
     background-image: url(http://media.paes.uconn.edu/port/portfolio/img/seo300.jpg); }
-  #mywork .project3, #work .project3 {
+  #mywork .project3 {
     background-image: url(http://media.paes.uconn.edu/port/portfolio/img/zen300.jpg); }
-  #mywork .project4, #work .project4 {
+  #mywork .project4 {
     background-image: url(http://media.paes.uconn.edu/port/portfolio/img/csszengarden.jpg); }
-  #mywork .project5, #work .project5 {
+  #mywork .project5 {
     background-image: url(http://media.paes.uconn.edu/port/portfolio/img/wallvideo.jpg);
     clear: both;
     width: 604px; }
-  #mywork .scale-wall-video, #work .scale-wall-video {
-    margin-left: -10px;
-    width: 102%; }
-  #mywork project6, #work project6 {
+  #mywork .project6 {
     background-image: url(http://media.paes.uconn.edu/port/portfolio/img/dakota.jpg); }
-  #mywork .project7, #work .project7 {
+  #mywork .project7 {
     overflow: hidden;
     height: 604px;
     width: 604px;
     background-image: url(http://media.paes.uconn.edu/port/portfolio/img/dakota.jpg); }
-  #mywork .align-video, #work .align-video {
-    margin-left: -38%; }
-  #mywork .project8, #work .project8 {
+  #mywork .project8 {
     clear: both;
     background-image: url(http://media.paes.uconn.edu/port/portfolio/img/dakota.jpg);
     margin-top: -310px; }
-  #mywork .project9, #work .project9 {
+  #mywork .project9 {
     background-image: url(http://media.paes.uconn.edu/port/portfolio/img/dakota.jpg);
     margin-top: -310px;
     margin-left: 304px; }
-  #mywork .border-left, #work .border-left {
-    border-left: 4px white solid; }
-  #mywork .border-right, #work .border-right {
-    border-right: 4px white solid; }
-  #mywork .border-top, #work .border-top {
-    border-top: 4px white solid; }
-  #mywork .border-bottom, #work .border-bottom {
-    border-bottom: 4px white solid; }
 
 .width100 {
   width: 100%;
@@ -337,18 +324,17 @@ https://jsfiddle.net/7L27oz5d/1/
 @media screen and (min-width: 925px) {
   .headshot {
     width: 400px;
-    Height: 400px;
+    height: 400px;
     float: left;
     margin-left: 15%;
     margin-right: 6%; }
 
   .right-margin {
-    margin-right: 5%;
     text-align: left;
-    margin-left: 18%; }
+    margin-left: 46%; }
 
   p {
-    font-size: 40px; }
+    font-size: 23px; }
 
   h1 {
     font-size: 100px; }

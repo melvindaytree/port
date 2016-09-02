@@ -1,22 +1,22 @@
 
-$(".project1").hover(function () {
-    $(".project1").find(".projecthover").stop(true).slideToggle("slow");
+$(".project1").click(function () {
+    $(".project1").find(".projecthover").stop(true).toggle("slow");
 });
 
-$(".project2").hover(function () {
-    $(".project2").find(".projecthover").stop(true).slideToggle("slow");
+$(".project2").click(function () {
+    $(".project2").find(".projecthover").stop(true).toggle("slow");
 });
 
-$(".project3").hover(function () {
-    $(".project3").find(".projecthover").stop(true).slideToggle("slow");
+$(".project3").click(function () {
+    $(".project3").find(".projecthover").stop(true).toggle("slow");
 });
 
-$(".project4").hover(function () {
-    $(".project4").find(".projecthover").stop(true).slideToggle("slow");
+$(".project4").click(function () {
+    $(".project4").find(".projecthover").stop(true).toggle("slow");
 });
 
-$(".project5").hover(function () {
-    $(".project5").find(".projecthover").stop(true).slideToggle("slow");
+$(".project5").click(function () {
+    $(".project5").find(".projecthover").stop(true).toggle("slow");
 });
 
 $(".project6").hover(function () {
