@@ -114,7 +114,7 @@ $('#progress').width('100%');
         $('#name').val("");
         $('#email').val("");
         $('#comments').val("");
-        setTimeout( function() {$('#progress').width(0)}, 3000);
+        setTimeout( function() {$('#progress').width(0)}, 2000);
     });
         
 });
