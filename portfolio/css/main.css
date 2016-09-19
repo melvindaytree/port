@@ -79,7 +79,7 @@ textarea {
    Author's custom styles
    ========================================================================== */
 @viewport {
-  width: extend-to-zoom 500px;
+  width: extend-to-zoom 320px;
   height: extend-to-zoom 600px; }
 html {
   box-sizing: border-box; }
