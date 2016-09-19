@@ -95,7 +95,10 @@ textarea {
    Author's custom styles
    ========================================================================== */
 @import url(https://fonts.googleapis.com/css?family=Roboto);
-
+@viewport {
+    width: extend-to-zoom 500px;
+    height: extend-to-zoom 600px;
+}
 
 
 $width: 100%;
@@ -104,6 +107,9 @@ $h2size: 80px;
 $firstBackgroundColor: rgb(27, 188, 155);
 $h5size: 60px;
 $aboutMeColor: #ECF2C7;
+$roboto: 'Roboto', sans-serif;
+$aquamarine: #ecf2c7;
+$maincolor: #1BBC9B;
 
 html {
   box-sizing: border-box;
@@ -123,7 +129,20 @@ h1 {
 
 p {
     font-size: 30px;
-    font-family: 'Roboto', sans-serif;
+    font-family: $roboto;
+}
+
+ul {
+  list-style-type: none;
+  padding-left:0px;
+}
+
+.float-left {
+  float:left;
+}
+
+.float-right {
+  float:right;
 }
 
 #fullpage {
@@ -206,6 +225,8 @@ https://jsfiddle.net/7L27oz5d/1/
     
     h2 {
         font-size:$h2size;
+        margin-top:30px;
+        margin-bottom:30px;
     }
     
    /* div {
@@ -223,7 +244,7 @@ https://jsfiddle.net/7L27oz5d/1/
 
     .projecthover { 
     background-color:#de9a44;
-    opacity:.8;
+    opacity:.9;
     width:100%; 
     height:100%; 
     display:none; 
@@ -233,38 +254,50 @@ https://jsfiddle.net/7L27oz5d/1/
     margin-left:0px;
     border:0px;
     z-index:20;
+
     }
     
     }
     
     p {
-        font-size:14px;
+        font-size:19px;
     }
 
+    .modal-button {
+  background-color: white;
+  border: 1px #1bbc9b solid;
+  transition: all .5s linear;
+  cursor: pointer;
+  background-color: #ECF2C7; }
+
+.modal-button:hover {
+  border: 1px black solid;
+  background-color: #1bbc9b; }
+
     .project1 {
-      background-image: url(http://media.paes.uconn.edu/port/portfolio/img/hangman300.jpg);
+      background-image: url(../img/hangman_wide3.jpg);
     }
 
     .project2 {
-      background-image: url(http://media.paes.uconn.edu/port/portfolio/img/seo300.jpg);
+      background-image: url(../img/seo_edit.jpg);
     }
 
     .project3 {
-      background-image: url(http://media.paes.uconn.edu/port/portfolio/img/zen300.jpg);
+      background-image: url(../img/zen_wide.jpg);
     }
 
     .project4 {
-      background-image: url(http://media.paes.uconn.edu/port/portfolio/img/csszengarden.jpg);
+      background-image: url(../img/csszengarden.jpg);
     }
 
     .project5 {
-      background-image: url(http://media.paes.uconn.edu/port/portfolio/img/wallvideo.jpg);
+      background-image: url(../img/wallvideo.jpg);
       clear:both;
       width:604px;
     }
 
     .project6 {
-      background-image: url(http://media.paes.uconn.edu/port/portfolio/img/dakota.jpg);
+      background-image: url(../img/dakota.jpg);
     }
 
     .project7 {
@@ -288,13 +321,28 @@ https://jsfiddle.net/7L27oz5d/1/
 
 }
 
-//Test
+
 .width100 {
   width:100%;
-  height:20%;
+  height:25%;
   background-color:blue;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  transition: all .5s ease;
 }
 
+.width100:hover {
+-webkit-box-shadow: inset 0px 0px 21px 0px rgba(222,154,68,1);
+-moz-box-shadow: inset 0px 0px 21px 0px rgba(222,154,68,1);
+box-shadow: inset 0px 0px 21px 0px rgba(222,154,68,1);
+}
+/*
+.width100:hover {
+-webkit-box-shadow: inset 0px 0px 21px 0px rgba(255,254,252,1);
+-moz-box-shadow: inset 0px 0px 21px 0px rgba(255,254,252,1);
+box-shadow: inset 0px 0px 21px 0px rgba(255,254,252,1);
+}
+*/
 
 .headshot {
     border-radius: 40px;
@@ -317,56 +365,6 @@ https://jsfiddle.net/7L27oz5d/1/
     background-color: #CDC7F2;
 }
 
-/*Modals*/
-.modal-width {
-    width:800px;
-    height:600px;
-}
-
-.modal-title {
-    text-align:center;
-    font-size: $h5size;
-    margin-bottom:50px;
-    margin-top:10px;
-}
-
-.modal-text {
-    float:left;
-    width:300px;
-    margin-left: 60px;
-}
-
-.modal-pic {
-    width:400px;
-    height:300px;
-    float:left;
-    border: 2px solid black;
-}
-
-.modal-button {
-    margin-top:40px;
-    text-align:center;
-    width:100px;
-    margin-left:45%;
-    background-color:white;
-    border: 1px $firstBackgroundColor solid;
-    transition: all .5s linear;
-    cursor:pointer;
-    background-color:$aboutMeColor;
-}
-
-.modal-button:hover {
-    border: 1px black solid;
-    background-color: $firstBackgroundColor;
-}
-
-.modal-link {
-  transition: all .5s linear;
-}
-
-.modal-link:hover {
-  color:white;
-}
 /*Skills Page*/
 
 .skills {
@@ -375,14 +373,48 @@ https://jsfiddle.net/7L27oz5d/1/
     
     h2 {
         font-size:$h2size;
-        margin-top:15%;
+        margin-top:5%;
+        font-family: $roboto;
+        color: black;
     }
     
     h4 {
-        font-size: 50px;
+        font-size: 30px;
+        font-family: $roboto;
+        color: $aquamarine;
     }
-    
+
+    #school {
+      width:70%;
+      display:block;
+      margin-left: auto;
+      margin-right:auto;
+    }
+
+    .line-up {
+        float: left;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        width: 50%;
+    }
+
+    ul>li {
+      font-size:20px;
+      font-family: $roboto;
+      margin-bottom: 10px;
+    }
+
+    img {
+      margin-top:-5px;
+      margin-right: 5px;
+    }
+
+    .display-none {
+      display:none;
+    }
 }
+
 
 .center-box{
   width:660px;
@@ -426,8 +458,17 @@ https://jsfiddle.net/7L27oz5d/1/
 }
 
 
+@media screen and (min-width:1300px) {
+    .logo-s {
+    width:500px;
+    height:500px;
+    }
+
+    
+}
+
 @media screen and (min-width:925px) {
-    .headshot {
+  .headshot {
     width: 400px;
     height: 400px;
     float:left;
@@ -441,19 +482,23 @@ https://jsfiddle.net/7L27oz5d/1/
     }
 
     p {
-    font-size:23px;
+    font-size:20px;
     }
 
     h1 {
       font-size: 100px;
     }
 
-    .logo-s {
-    width:500px;
-    height:500px;
-    }
+    .pic-text-width-s {
+    width:600px;
+}
 }
 
+@media screen and (max-width:1299px) {
+  .arrow-margin {
+      margin-top: -50px !important;
+    }
+}
 /* Contact Page*/
 
 #section3 {
@@ -511,6 +556,15 @@ https://jsfiddle.net/7L27oz5d/1/
     background-color: #ED3434;
     color: white;
     }
+
+#progress {
+  width:0%;
+  height:5px;
+  background-color:blue;
+  position:absolute;
+  top: 0px;
+  transition: all 1s linear;
+}
 
 /* Footer */
 
