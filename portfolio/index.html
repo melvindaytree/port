@@ -12,8 +12,6 @@
 	
 
 
-	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
-	<link rel="stylesheet" type="text/css" href="css/main.css" />
 
 	<!--[if IE]>
 		<script type="text/javascript">
@@ -21,19 +19,7 @@
 		</script>
 	<![endif]-->
 
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
 
-	<script type="text/javascript" src="js/jquery.fullPage.js"></script>
-	<script type="text/javascript" src="examples.js"></script>
-	<script type="text/javascript">
-		$(document).ready(function() {
-			$('#fullpage').fullpage({
-				sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE'],
-       			css3: true
-       		});
-		});
-	</script>
 
 </head>
 <body>
@@ -52,69 +38,102 @@
 		<div class="slide intro">
 			<h1 class="display-none show-header">About Me</h1>
 			<img src="../img/headshot_500.png" class="headshot shape-outside">
-			<p class="right-margin margin-auto pic-text-width pic-text-width-s">
-	      I’m currently a junior at the University of Connecticut pursuing a degree in Digital Media and Design. My focus is in Web Development and Front End Engineering. I first started building websites in highschool, where I used Adobe Dreamweaver to make my first creations. That is where I discovered my love for Digital Media and especially Websites. <br /><br />
+			<p class="right-margin margin-auto pic-text-width pic-text-width-s font640">
+	      	Currently I'm a junior at the University of Connecticut pursuing a degree in Digital Media and Design. My focus is in Web Development and Front End Engineering. I first started building websites in high school, where I used Adobe Dreamweaver to make my first creations. That is where I discovered my love for digital media and especially websites.<br /><br />
 
-Today I code all my websites by hand and use my skills and knowledge to produce content. I’m constantly striving to improve my skills in all aspects of Web Design and am always eager to learn the latest and greatest technology.
-<br /><br />
-When I’m not designing websites, I like to read books (short stories), work on my investment accounts or workout at the gym.
+			Today I code all my websites by hand and use my skills and knowledge to produce content. I’m constantly striving to improve my skills in all aspects of the web. Therefore I have recently started pursuing more computer science and MIS classes in order to branch out and learn as much as possible to aid me in web development.
+			<br /><br />
+			
+			<span class="hide-hobbies">When I’m not designing websites, I like to read books (currently The Count of Monte Cristo), work on my investment accounts or workout at the gym.</span>
 
 			</p>
 		<div class="slide">
-			<div id="mywork" class="">
-					<div class="project1 width100">
+			<div id="mywork" class="fp-scrollable">
+				<div id="topPort">
+					<div class="project1 width30">
+						<img src="../img/hangman_single.png" height="160px" alt="hangman word game fun">
 						<div class="projecthover">
 							<h2>Hangman</h2>
 							<img src="../img/hangman300.jpg" height="300" width="300" alt="hangman website game">
-							<p>This is a web application I created as a final project<br /> for my Web Development class.
-								It uses mainly Javascript and JQuery <br />with Ajax in order to pull the words from an array<br />
-								without ever having to reload the page.
-								<br />
+							<p class="align-center width25">This is a web application I created as a final project for my Web Development class.
+								It uses mainly Javascript and JQuery with Ajax in order to pull the words from an array
+								without ever having to reload the page.<br />
 								Give it a try here! 
 							</p>
 							<a href="../portfolio/hangman" target="_blank"><button class="modal-button">Live Demo</button></a>
 						</div>
 					</div>
-					<div class="project2 width100">
+					<div class="project4 width30">
+						<div class="projecthover">
+							<h2>UConn Database Project</h2>
+							<img src="../img/database_full.jpg" height="300" width="600" alt="css zen garden submission">
+							<p class="align-center width25">This is a project that was initiated by me and a fellow co-worker upon seeing that
+								the Facilities IT directions were using a huge spreadsheet in order to keep track
+								of all the open positions as well as employees. We build a web app using mySQL and
+								PHP for the backend and HTML, CSS, Bootstrap, and Javascript in order to create
+								the front end of the website. It made tracking all the changes much easier and 
+								provides up to date info on all the employees. In v2 there will be the ability
+								to assign and track custodians all over UConn.
+							</p>
+							<a href=" target="_blank"><button class="modal-button" disabled>Sadly I cannot provide a live demo due to personal info.</button></a>
+						</div>
+					</div>
+					</div>
+				<div id="midPort">
+					<div class="project2 width30">
 						<h2>SEO</h2>
 						<div class="projecthover">
 							<h2>Search Engine Optimization</h2>
 							<img src="../img/seo300.jpg" height="300" width="300" alt="search engine optimization">
-							<p>This is a case study done on search engine optimization.<br />
-								SEO is one of the most important skills a web developer can have in order to <br />
+							<p class="align-center width25">This is a case study done on search engine optimization.
+								SEO is one of the most important skills a web developer can have in order to 
 								ensure that his websites will be viewed, instead of being stuck on the 5th page of 
-								a google search.<br /> The website lists all the basic principles one should follow in
+								a google search. The website lists all the basic principles one should follow in
 								order to score higher rankings on the web.<br />
 								Check it out here!
 							</p>
-							<!--CHANGE THIS HERE --><a href="../portfolio/seo" target="_blank"><button class="modal-button">Live Demo</button></a>
+							<a href="../portfolio/seo" target="_blank"><button class="modal-button">Live Demo</button></a>
 						</div>
 					</div>
-					<div class="project3 width100">
+					<div class="project3 width30">
 						<div class="projecthover">
 							<h2>CSS Zen Garden</h2>
 							<img src="../img/zen300.jpg" height="300" width="300" alt="css zen garden submission">
-							<p>This was a project done for the <a href="http://www.csszengarden.com" target="_blank">CSS Zen Garden website</a>.<br />
-							The goal was to take only the html provided and design a unique experience for the user using only CSS.<br />
-							I decided to make a blackboard themed site with text that looked like it was written on the blackboard and <br />
-							tilted the text in order to make it more realistic. While it may look crooked the website is still offers<br />
+							<p class="align-center width25">This was a project done for the <a href="http://www.csszengarden.com" target="_blank">CSS Zen Garden website</a>.<br />
+							The goal was to take only the html provided and design a unique experience for the user using only CSS.
+							I decided to make a blackboard themed site with text that looked like it was written on the blackboard and
+							tilted the text in order to make it more realistic. While it may look crooked the website is still offers
 							a great user experience.
 							</p>
-							<!--CHANGE THIS HERE --><a href="../portfolio/" target="_blank"><button class="modal-button">Live Demo</button></a>
+							<a href="../portfolio/zen" target="_blank"><button class="modal-button">Live Demo</button></a>
 						</div>
 					</div>
-					<div class="project4 width100">
+				</div>
+				<div id="botPort">
+					<div class="project5 width30">
 						<div class="projecthover">
-							<h2>Project4</h2>
-							<p>fffffffffffff</p>
+							<h2>Creativity has no limits</h2>
+							<iframe src="https://player.vimeo.com/video/165084036" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+							<p><a href="https://vimeo.com/165084036">Creativity has no limits</a></p></iframe>
+							<p class="align-center width25">I created this video in order to 
+								show how we can use digital media in correlation with the real
+								world and build something new. I used my Iphone camera for the video, After Effects for all the editing and Audition for the music. Enjoy!
+							</p>
 						</div>
 					</div>
-					<div class="project5 width100">
-							<div class="projecthover">
-								<h2>Project5</h2>
-								<p>fggggggg</p>
-							</div>
+					<div class="project6 width30">
+						<div class="projecthover">
+							<h2>Dakota</h2>
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/h_f92FJJntg" frameborder="0" allowfullscreen></iframe>
+							<p class="align-center width25">Dakota is a song written by Davis Baer, 
+								who was one of my team members for this project. 
+								Along with two others we made a music video for the song using adobe after effect.
+								 We wanted to capture the energy of his music by purely using animations and we did so very effectily.
+							</p>
+						</div>
 					</div>
+				</div>
+				
 			</div>
 		</div>
 		<div class="slide skills"> 
@@ -154,11 +173,12 @@ When I’m not designing websites, I like to read books (short stories), work on
 		</div>
 
 		<div class="section home" id="section3">
-		<h2>University of Connecticut</h2>
+		<h2><a href="http://www.uconn.edu" target="_blank">University of Connecticut</a></h2>
 		<span class="">
 		<h3><span class="outline-color">Degree:</span> B.A. Fine Arts Digital Media and Design</h3>
 		<h3><span class="outline-color">Concentration:</span> Web Development and Design</h3>
 		<h3><span class="outline-color">Year of Graduation:</span> 2018</h3>
+		<h2><a href="/Melvin-Daytree-resume.pdf" target="_blank">Resume</a></h2>
 		</span>
 		<div class="test-arrow element-animation arrow-margin"></div>
 		</div>
@@ -195,6 +215,19 @@ When I’m not designing websites, I like to read books (short stories), work on
 
 </body>
 
+	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+	<link rel="stylesheet" type="text/css" href="css/main.css" />
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/jquery.fullPage.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE'],
+       			css3: true
+       		});
+		});
+	</script>
 <script type="text/javascript" src="js/main.js"></script>
 <script src="jquery-modal-master/jquery.modal.min.js" type="text/javascript" charset="utf-8"></script>
 <link rel="stylesheet" href="jquery-modal-master/jquery.modal.css" type="text/css" media="screen" />

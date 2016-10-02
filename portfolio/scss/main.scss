@@ -113,10 +113,41 @@ $aboutMeColor: #ECF2C7;
 $roboto: 'Roboto', sans-serif;
 $aquamarine: #ecf2c7;
 $maincolor: #1BBC9B;
+$beigecolor: #4bbfc3;
+
+
+//CSS Gradient Backgrounds
+.head-gradient {
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1bbc9b+0,ecf2c7+100 */
+background: #1bbc9b; /* Old browsers */
+background: -moz-linear-gradient(top,  #1bbc9b 0%, #ecf2c7 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #1bbc9b 0%,#ecf2c7 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #1bbc9b 0%,#ecf2c7 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1bbc9b', endColorstr='#ecf2c7',GradientType=0 ); /* IE6-9 */
+}
+
+.about-gradient {
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ecf2c7+7,ecf2c7+79,4bbfc3+99 */
+background: #ecf2c7; /* Old browsers */
+background: -moz-linear-gradient(top,  #ecf2c7 7%, #ecf2c7 79%, #4bbfc3 99%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #ecf2c7 7%,#ecf2c7 79%,#4bbfc3 99%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #ecf2c7 7%,#ecf2c7 79%,#4bbfc3 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ecf2c7', endColorstr='#4bbfc3',GradientType=0 ); /* IE6-9 */
+}
+
+.edu-gradient {
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4bbfc3+1,1bbc9b+100 */
+background: #4bbfc3; /* Old browsers */
+background: -moz-linear-gradient(top,  #4bbfc3 1%, #1bbc9b 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #4bbfc3 1%,#1bbc9b 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #4bbfc3 1%,#1bbc9b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4bbfc3', endColorstr='#1bbc9b',GradientType=0 ); /* IE6-9 */  
+}
 
 html {
   box-sizing: border-box;
 }
+
 
 div {
     height: $height;
@@ -151,6 +182,12 @@ ul {
 .display-none {
       display:none;
     }
+
+.align-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}    
 
 #fullpage {
     transition: all 1000ms ease;
@@ -277,7 +314,7 @@ https://jsfiddle.net/7L27oz5d/1/
     div {
 
     .projecthover { 
-    background-color:#de9a44;
+    background-color:$aboutMeColor; //original orange #de9a44
     opacity:.9;
     width:100%; 
     height:100%; 
@@ -297,25 +334,31 @@ https://jsfiddle.net/7L27oz5d/1/
         font-size:19px;
     }
 
+    .width25 {
+      width: 25%;
+    }
+
     .modal-button {
   background-color: white;
   border: 1px #1bbc9b solid;
   transition: all .5s linear;
   cursor: pointer;
-  background-color: #ECF2C7; }
+  background-color: $beigecolor; 
+  width: 10%;
+  height: 5%;
+  }
 
 .modal-button:hover {
   border: 1px black solid;
-  background-color: #1bbc9b; }
+  background-color: $maincolor; }
 
     .project1 {
-      background-image: url(../img/hangman_wide3.jpg);
+      background-color: #00b9f2;
     }
 
     .project2 {
       //background-image: url(../img/seo_edit.jpg);
       background-color:black;
-      width:100%;
 
       h2 {
         text-align:center;
@@ -328,20 +371,20 @@ https://jsfiddle.net/7L27oz5d/1/
 
     .project3 {
       background-image: url(../img/zen_wide.jpg);
+      background-color: black;
     }
 
     .project4 {
-      background-image: url(../img/csszengarden.jpg);
+      background-image: url(../img/database_full.jpg);
     }
 
     .project5 {
-      background-image: url(../img/wallvideo.jpg);
+      background-image: url(../img/wallvideo400.jpg);
       clear:both;
-      width:604px;
     }
 
     .project6 {
-      background-image: url(../img/dakota.jpg);
+      background-image: url(../img/dakota400.jpg);
     }
 
     .project7 {
@@ -364,8 +407,8 @@ https://jsfiddle.net/7L27oz5d/1/
     }
 
 }
-
-
+//This is for making the img section full width
+/*
 .width100 {
   width:100%;
   height:25%;
@@ -376,10 +419,32 @@ https://jsfiddle.net/7L27oz5d/1/
 }
 
 .width100:hover {
--webkit-box-shadow: inset 0px 0px 21px 0px rgba(222,154,68,1);
--moz-box-shadow: inset 0px 0px 21px 0px rgba(222,154,68,1);
-box-shadow: inset 0px 0px 21px 0px rgba(222,154,68,1);
+-webkit-box-shadow: inset 0px 0px 21px 0px $aboutMeColor;
+-moz-box-shadow: inset 0px 0px 21px 0px $aboutMeColor;
+box-shadow: inset 0px 0px 21px 0px $aboutMeColor;
 }
+*/
+
+.width30 {
+  width: 400px;
+  height: 200px;
+  background-color:blue;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  transition: all .5s ease;
+  margin-bottom: 20px;
+  border: 2px solid white;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.width30:hover {
+-webkit-box-shadow: inset 0px 0px 21px 0px $aboutMeColor;
+-moz-box-shadow: inset 0px 0px 21px 0px $aboutMeColor;
+box-shadow: inset 0px 0px 21px 0px $aboutMeColor;
+}
+
 /*
 .width100:hover {
 -webkit-box-shadow: inset 0px 0px 21px 0px rgba(255,254,252,1);
@@ -408,6 +473,27 @@ box-shadow: inset 0px 0px 21px 0px rgba(255,254,252,1);
 .work {
     background-color: #CDC7F2;
 }
+
+#topPort, #midPort, #botPort {
+  height: 450px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.portMarginTop {
+  margin-top:40px;
+}
+
+.portMarginBot {
+  margin-bottom:40px;
+}
+
+.fp-scrollable {
+  overflow-y: scroll;  
+  overflow-x: hidden;
+}
+
 
 /*Skills Page*/
 
@@ -474,6 +560,15 @@ box-shadow: inset 0px 0px 21px 0px rgba(255,254,252,1);
 
 //Education Page
 #section3 {
+
+  a {
+    color: $aboutMeColor;
+  }
+
+  a:hover {
+    color: white;
+  }
+
   h2 {
     color: $aboutMeColor;
     font-size:40px;
@@ -579,6 +674,16 @@ box-shadow: inset 0px 0px 21px 0px rgba(255,254,252,1);
   .arrow-margin {
       margin-top: -50px !important;
     }
+}
+
+@media screen and (max-width:640px) {
+  .hide-hobbies {
+    display:none;
+  }
+
+  .font640 {
+    font-size:23px;
+  }
 }
 /* Contact Page*/
 
