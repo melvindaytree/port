@@ -8,6 +8,7 @@
    Base styles: opinionated defaults
    ========================================================================== */
 @import url(https://fonts.googleapis.com/css?family=Roboto);
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web);
 html {
   color: #222;
   font-size: 1em;
@@ -133,7 +134,7 @@ h1 {
   font-size: 80px;
   margin-top: 0px;
   margin-bottom: 0px;
-  font-family: 'Roboto', sans-serif; }
+  font-family: "Roboto", sans-serif; }
 
 p {
   font-size: 20px;
@@ -639,6 +640,10 @@ footer {
   footer p {
     font-size: 10px;
     text-decoration: none; }
+  footer .img-margin {
+    margin-bottom: 5px;
+    float: left;
+    margin-right: 2px; }
 
 .test-arrow {
   border-right: 15px solid white;
@@ -663,8 +668,8 @@ footer {
   margin-top: 50px; }
 
 .fp-controlArrow.fp-prev {
-  border-right: 15px solid white;
-  border-bottom: 15px solid white;
+  border-right: 15px solid black;
+  border-bottom: 15px solid black;
   width: 30px;
   height: 30px;
   transform: rotate(140deg);
@@ -675,8 +680,8 @@ footer {
   margin-top: 50px; }
 
 .fp-controlArrow.fp-prev {
-  border-right: 15px solid white;
-  border-bottom: 15px solid white;
+  border-right: 15px solid black;
+  border-bottom: 15px solid black;
   width: 30px;
   height: 30px;
   transform: rotate(140deg);
@@ -689,8 +694,8 @@ footer {
   left: 30px; }
 
 .fp-controlArrow.fp-next {
-  border-left: 15px solid white;
-  border-bottom: 15px solid white;
+  border-left: 15px solid black;
+  border-bottom: 15px solid black;
   width: 30px;
   height: 30px;
   transform: rotate(-140deg);

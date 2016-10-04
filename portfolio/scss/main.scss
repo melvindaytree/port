@@ -95,6 +95,7 @@ textarea {
    Author's custom styles
    ========================================================================== */
 @import url(https://fonts.googleapis.com/css?family=Roboto);
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web);
 
 @media screen and (-webkit-min-device-pixel-ratio:0) { 
   select,
@@ -111,6 +112,7 @@ $firstBackgroundColor: rgb(27, 188, 155);
 $h5size: 60px;
 $aboutMeColor: #ECF2C7;
 $roboto: 'Roboto', sans-serif;
+$till: 'Titillium Web', sans-serif;
 $aquamarine: #ecf2c7;
 $maincolor: #1BBC9B;
 $beigecolor: #4bbfc3;
@@ -159,7 +161,7 @@ h1 {
     font-size: 80px;
     margin-top: 0px;
     margin-bottom:0px;
-    font-family: 'Roboto', sans-serif;
+    font-family: $roboto;
 }
 
 p {
@@ -830,6 +832,13 @@ footer {
     z-index: 20;
     margin-right:3px;
 
+
+    .img-margin {
+      margin-bottom: 5px;
+      float: left;
+      margin-right: 2px;
+    }
+
 }
 
 .test-arrow {
@@ -857,8 +866,8 @@ footer {
 }
 
 .fp-controlArrow.fp-prev { 
-    border-right:15px solid white;
-    border-bottom:15px solid white;
+    border-right:15px solid black;
+    border-bottom:15px solid black;
     width:30px;
     height:30px;
     transform: rotate(140deg);
@@ -870,8 +879,8 @@ footer {
 }
 
 .fp-controlArrow.fp-prev { 
-    border-right:15px solid white;
-    border-bottom:15px solid white;
+    border-right:15px solid black;
+    border-bottom:15px solid black;
     width:30px;
     height:30px;
     transform: rotate(140deg);
@@ -885,8 +894,8 @@ footer {
 }
 
 .fp-controlArrow.fp-next { 
-    border-left:15px solid white;
-    border-bottom:15px solid white;
+    border-left:15px solid black;
+    border-bottom:15px solid black;
     width:30px;
     height:30px;
     transform: rotate(-140deg);

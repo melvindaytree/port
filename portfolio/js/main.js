@@ -2,6 +2,7 @@
 function toggleDisplay(id) {
     $(id).click(function() {
     $(id).find(".projecthover").stop(true).toggle("slow");
+    $(".fp-controlArrow").toggle();
     });
 };
 
